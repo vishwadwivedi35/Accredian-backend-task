@@ -12,7 +12,7 @@ app.use(cors());
 
 app.use(
   cors({
-    origin: "http://localhost:3000",
+    origin: "*", // Allows all origins (not recommended for production)
     methods: "GET,POST",
     allowedHeaders: "Content-Type",
   })
